@@ -6,6 +6,12 @@ body {
   h1 {
     color: rgb(135, 150, 177);  /* Cor do título */
     text-align: center; /* Alinhamento central do título */
+    text-decoration: underline; /*Define o texto do título como sublinhado*/    
+  }
+
+  h3 {
+    color: rgb(135, 150, 177);  /* Cor do subtítulo */
+    text-align: center; /* Alinhamento central do subtítulo */
   }
   
   
@@ -40,24 +46,25 @@ body {
   
   
   .peso{
-    width: 100%;
-    text-align: center;
-    margin-left: 10px;
+    width: 100%; /*Largura do campo "Peso"*/
+    text-align: center; /*Alinhamento do texto no campo "Peso"*/
+    margin-left: 10px; /*Margem esquerda no campo "Peso"*/
+    
   }
   
   .altura {
-    width: 100%;
-    text-align: center;
+    width: 100%; /*Largura do campo "Altura"*/
+    text-align: center; /*Alinhamento do texto no campo "Altura"*/
   }
   
   .mostra-imc {
-    width: 100%;
-    text-align: center;
+    width: 100%; /*Largura do campo com resultado do IMC*/
+    text-align: center; /*Alinhamento do campo com resultado do IMC*/
   }
   
   .classificacao {
-    width: 100%;
-    text-align: center;
+    width: 100%; /*Largura do campo com classificação do IMC*/
+    text-align: center; /*Alinhamento do campo com classificação do IMC*/
   }
   
   #limpar {
@@ -92,5 +99,7 @@ body {
   
   
   #classificacao {
-    background-color: rgb(200, 200, 200); /* Cor de fundo do campo "Classificação" */    
+    background-color: rgb(200, 200, 200); /* Cor de fundo do campo "Classificação" */   
+    width: 70%;
+    text-align: center;
   } 

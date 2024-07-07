@@ -8,20 +8,22 @@
   <script src="script.js"></script>
 </head>
 <body>
+  <!-- Tag para informar ao usuário que o JavaScript está desabilitado no navegador-->
   <noscript>Seu navegador está com o JavaScript desativado!</noscript>
 
   <h1 id="titulo">Calculadora de IMC</h1>
+  <h3 id="titulo">Informe seu peso em Kg. (Ex.: 70). Sua altura em cm. (Ex.: 170)</h3>
 
-
+  <!-- Formulário onde serão inseridos os dados para calcular o IMC-->
   <form action=".">
     <div class="peso">
-      <label for="peso">Peso:</label> <input type="text" name="peso" id="peso" value="">
+      <label for="peso">Peso</label> <input type="text" name="peso" id="peso" value="">
     </div>
 
     <div class="altura">
-      <label for="altura">Altura:</label> <input type="text" name="altura" id="altura" value="">
+      <label for="altura">Altura</label> <input type="text" name="altura" id="altura" value="">
     </div>
-
+    <!--Container com os botões calcular e limpar-->
     <div class="button-container">
       <button id="calcular" class="botao" onclick="calcularIMC()">Calcular</button>
       <button id="limpar" class="botao" onclick="limpar()">Limpar</button>
