@@ -1,42 +1,96 @@
 body {
-    background-color: rgb(17, 70, 105);
-    margin: 0%;
-}
-
-h1 {
-    color: rgb(135, 150, 177);
-    text-align: center;
-}
-
-h3 {
-    color: rgb(135, 150, 177);
-    text-align: center;
-}
-
-form {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-label {
-    width: 100px;
-    line-height: 26px;
-    margin-bottom: 10px;
-}
-
-input {
-    height: 20px;
-    width: 5%;
-    margin-left: 10px;
-}
-
-.item {
+    background-color: rgb(17, 70, 105);  /* Cor de fundo da página */
+    margin: 0%; /* Remove margem do body */
+  }
+  
+  h1 {
+    color: rgb(135, 150, 177);  /* Cor do título */
+    text-align: center; /* Alinhamento central do título */
+  }
+  
+  
+  
+  form {
+    display: flex; /* Define o formulário como um elemento flexbox */
+    flex-direction: row;  /* Organiza os elementos do formulário na horizontal */
+    flex-wrap: wrap;  /* Permite quebrar linhas se necessário */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: stretch; /* Estica os elementos para preencher a altura disponível */
+    width: 20%; /* Define a largura do formulário como 20% */
+    margin-left: auto; /* Adiciona margem esquerda automática */
+    margin-right: auto; /* Adiciona margem direita automática */
+    background-color: white; /* Cor de fundo do formulário */
+    border-radius: 10px; /* Borda arredondada do formulário */
+  }
+  
+  label {
+    width: 90px; /* Largura das labels */
+    line-height: 26px; /* Altura da linha das labels */
+    margin-bottom: 10px; /* Margem inferior das labels */
+  }
+  
+  input {
+    height: 30px; /* Altura dos campos de entrada */
+    width: 20%; /* Largura dos campos de entrada */
+    padding: 5px; /* Padding interno dos campos */
+    border: 1px solid rgb(200, 200, 200); /* Borda dos campos */
+    border-radius: 10px; /* Borda arredondada dos campos */
+    font-size: 16px; /* Tamanho da fonte dos campos */
+  }
+  
+  
+  .peso{
     width: 100%;
     text-align: center;
-}
+    margin-left: 10px;
+  }
+  
+  .altura {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .mostra-imc {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .classificacao {
+    width: 100%;
+    text-align: center;
+  }
+  
+  #limpar {
+    background-color: rgb(0, 128, 0);  /* Cor de fundo do botão "Limpar" */
+    color: white; /* Cor da fonte do botão "Limpar" */
+    border: none; /* Remove a borda do botão "Limpar" */
+    padding: 10px 20px; /* Padding interno do botão "Limpar" */
+    font-size: 16px; /* Tamanho da fonte do botão "Limpar" */
+    border-radius: 20px; /* Borda arredondada do botão "Limpar" */
+    margin-right: 20% /* Margem direita do botão "Limpar" */
+  }
+  
+  .button-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;  /* Margem superior do container de botões */
+    display: flex; /* Define o container de botões como um elemento flexbox */
+    justify-content: space-between; /* Distribui os botões horizontalmente com espaçamento entre eles */
+  }
+  
+  
+  #calcular {
+    background-color: rgb(0, 0, 255); /* Cor de fundo do botão "Calcular" */
+    color: white; /* Cor da fonte do botão "Calcular" */
+    border: none; /* Remove a borda do botão "Calcular" */
+    padding: 10px 20px; /* Padding interno do botão "Calcular" */
+    font-size: 16px; /* Tamanho da fonte do botão "Calcular" */
+    border-radius: 20px; /* Borda arredondada do botão "Calcular" */
+    margin-left: 20%; /* Margem esquerda do botão "Calcular" */
+  }
+  
+  
+  
+  #classificacao {
+    background-color: rgb(200, 200, 200); /* Cor de fundo do campo "Classificação" */    
+  } 

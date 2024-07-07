@@ -1,46 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade 01 - Calculadora de IMC.</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade 01 - Calculadora de IMC.</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
 <body>
-    <noscript>Seu navegador está com o JavaScript desativado!</noscript>
+  <noscript>Seu navegador está com o JavaScript desativado!</noscript>
 
-    <h1 id="titulo">Calculadora de IMC</h1>
-    <h3 id="subtitulo">Insira sua informação de peso em kg e altura em cm</h3>
+  <h1 id="titulo">Calculadora de IMC</h1>
 
-    <form action=".">
-        <div class="item">
-            <label for="peso"> Peso:
-                <input type="text" name="peso" id="peso" value="">
-            </label>
-        </div>
 
-        <div class="item">
-            <label for="altura"> Altura:
-                <input type="text" name="altura" id="altura" value="">
-            </label>
-        </div>
+  <form action=".">
+    <div class="peso">
+      <label for="peso">Peso:</label> <input type="text" name="peso" id="peso" value="">
+    </div>
 
-        <div class="item">
-            <label for="resultado"> Resultado:
-                <input type="text" name="resultado" id="resultado" disabled>
-            </label>
-        </div>
+    <div class="altura">
+      <label for="altura">Altura:</label> <input type="text" name="altura" id="altura" value="">
+    </div>
 
-        <div class="item">
-            <label for="classificacao"> Classificação:
-                <input type="text" name="classificacao" id="classificacao" disabled>
-            </label>
-        </div>
+    <div class="button-container">
+      <button id="calcular" class="botao" onclick="calcularIMC()">Calcular</button>
+      <button id="limpar" class="botao" onclick="limpar()">Limpar</button>
+    </div>
 
-        <button id="limpar" class="botao" onclick="limpar()">Limpar</button>
-    </form>
-    
+    <div class="mostra-imc">
+      <p id="mostra-imc">Seu IMC é: </p>
+    </div>
+
+    <div class="classificacao">
+  <label for="classificacao">Classificação:</label>
+  <input type="text" name="classificacao" id="classificacao" disabled>
+</div>
+
+  </form>
+
 
 </body>
 </html>
